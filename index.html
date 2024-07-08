@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: k8spod
+  labels:
+    app: myapp
+spec:
+  containers:
+  - name: container
+    image: httpd
+    ports:
+    - containerPort: 80
